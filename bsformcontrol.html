@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BootStrap Form Control</title>
+    <!-- bootstrap css1 js2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!-- select2  css1 js1-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+ <!-- flatpickr css1 js1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- summernote css1 js1 -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>BootStrap Form Control</h1>
+
+      <form class="" action="" method="" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" value="" id="firstname" class="form-control form-control-sm rounded-0" placeholder="Eneter your first name">
+          </div>
+
+          <div class="col-md-6">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" value="" id="lastname" class="form-control form-control-sm rounded-0" placeholder="Enter your last name">
+          </div>
+
+          <div class="col-md-6">
+            <label for="email">Email</label>
+            <input type="text" name="email" value="" id="email" class="form-control form-control-sm rounded-0" placeholder="Eneter your email" autocomplete="off">
+          </div>
+
+          <div class="col-md-6">
+            <label for="password">Password</label>
+            <input type="password" name="password" value="" id="password" class="form-control form-control-sm rounded-0" placeholder="Enter your Password">
+          </div>
+
+          <div class="col-md-6">
+            <label for="country">Country</label>
+            <select class="form-select form-select-sm rounded-0" name="country" id="country" >
+              <option value="" disabled selected>Choose Country</option>
+              <option value="mm">Myanmar</option>
+              <option value="th">Thailand</option>
+              <option value="malay">Malaysia</option>
+              <option value="lao">Laos</option>
+              <option value="indo">Indonesia</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="role">Role</label>
+            <select class="form-select form-select-sm rounded-0" name="role[]" id='role' multiple>
+              <option value="ad">Admin</option>
+              <option value="sup">Supervisor</option>
+              <option value="ed">Editor</option>
+              <option value="mg">Manager</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="">Gender</label>
+            <div class="form-check">
+              <input type="radio" name="gender" value="1" id="genderm" class="form-check-input">
+              <label for="genderm">Male</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="gender" value="2" id="genderf" class="form-check-input">
+              <label for="genderf">Female</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="">Fav music</label>
+
+            <div class="form-check">
+              <input type="checkbox" name="favmusic" value="pop" id="favpop" class="form-check-input">
+              <label for="favpop">Pop</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="favmusic" value="rock" id="favrock" class="form-check-input">
+              <label for="favrock">Rock</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="favmusic" value="hip-hop" id="favhip-hop" class="form-check-input">
+              <label for="favhip-hop">Hip-hop</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" value="" id="dob" class="form-control form-control-sm rounded-0" placeholder="Choose DOB">
+          </div>
+
+          <div class="col-md-6">
+            <label for="" class="nrc">NRC</label>
+            <input type="file" name="nrc" value="" id="nrc" class="form-control form-control-sm rounded-0" multiple>
+          </div>
+
+          <div class="col-md-6">
+            <label for="score">Score</label>
+            <input type="range" name="score" value="0" id="score" class="form-range" min="0" max="100" >
+          </div>
+
+          <div class="col-md-12">
+            <label for="bio">Summary Bio</label>
+            <textarea name="bio" id="bio" class="form-control rounded-0"></textarea>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-check form-switch">
+              <input type="checkbox" name="agree" value="agree" id="agree" class="form-check-input">
+              <label for="agree">I agree all above regulations</label>
+            </div>
+          </div>
+          <!-- m-0 to 5
+          mb-0 to 5
+          mt-0 to 5
+          mx-0 to 5
+          my-0 to 5
+          ms-o to 5 (left)start
+          me-0 to 5 (right)end -->
+
+          <div class="col-md-12">
+            <div class="d-flex justify-content-end">
+              <button type="cancel" name="button" class="btn btn-secondary btn-sm rounded-0">Cancel</button>
+              <button type="submit" name="button" class="btn btn-primary btn-sm rounded-0 mx-3">Register</button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </form>
+
+    </div>
+
+
+
+    <!-- bootstrap css1 js2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!-- JQ -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- select 2 css1 js1 -->
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- flatpickr css1 js1 -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+ <!-- summernote css1 js1 -->
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  // console.log('hey');
+  //for role to choice multi
+  $('#role').select2();
+  // date of birth design
+  $('#dob').flatpickr(
+   //  {
+   //  enableTime: true,
+   //  dateFormat: "Y-m-d H:i",
+   // }
+   {
+     dateFormat: "d-m-Y",
+     minDate: "6-03-2022",
+    // inline:true
+
+   }
+  );
+  //for Bio
+  $("#bio").summernote({
+    placeholder: "Write Something",
+    tabsize: 2,
+    height:180,
+    toolbar: [
+
+  ['font', ['bold', 'underline' ]],
+  ['color', ['color']],
+  ['para', ['ul', 'ol', 'paragraph']],
+  ['table', ['table']],
+  ['insert', ['link']],
+
+]
+  });
+
+});
+
+</script>
+
+  </body>
+</html>
